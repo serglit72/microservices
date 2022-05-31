@@ -10,4 +10,4 @@ docker build -t my_model3 .
 docker images
 # Step 3: 
 # Run flask app
-docker run -p 80:80 -d my_model3 sh ./make_prediction.sh
+docker run -it -p 8787:8787 my_model3
