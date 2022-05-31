@@ -1,5 +1,4 @@
-<include a CircleCI status badge, here>
-
+[![CircleCI](https://circleci.com/gh/serglit72/microservices_p4/tree/master.svg?style=svg)](https://circleci.com/gh/serglit72/microservices_p4/tree/master)
 ## Project Overview
 
 In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 
@@ -45,6 +44,10 @@ source .devops/bin/activate
 ### Kubernetes Steps
 
 * Setup and Configure Docker locally
+dockerpath="serglit72/"
 * Setup and Configure Kubernetes locally
+kubectl create deploy my-model4 --image=serglit72/my_model3:v1.0.0
 * Create Flask app in Container
+`./run_docker.sh`
 * Run via kubectl
+`./run_kubernetes.sh`
