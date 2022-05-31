@@ -14,7 +14,7 @@ kubectl create deploy my-model4 --image=serglit72/my_model3:v1.0.0
 # List kubernetes pods
 kubectl get deploy,rs,svc,pods
 
-pod_name=$(kubectl get pods --selector=app=my-model3 -o jsonpath='{.items[*].metadata.name}')
+pod_name=$(kubectl get pods --selector=app=my-model4 -o jsonpath='{.items[*].metadata.name}')
 echo ${pod_name}
 
 # Step 4:
