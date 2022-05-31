@@ -46,7 +46,7 @@ source .devops/bin/activate
 * Setup and Configure Docker locally
 dockerpath="serglit72/"
 * Setup and Configure Kubernetes locally
-kubectl create deploy my-model4 --image=serglit72/my_model3:v1.0.0
+`kubectl create deploy my-model4 --image=serglit72/my_model3:v1.0.0`
 * Create Flask app in Container
 `./run_docker.sh`
 * Run via kubectl
